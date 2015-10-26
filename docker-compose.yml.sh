@@ -22,8 +22,6 @@ web:
 
 mongo:
   image: mongo:3.0
-  volumes:
-    - ./data:/data/db
   ports:
     - "27018:27017"
 
