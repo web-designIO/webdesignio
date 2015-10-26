@@ -1,10 +1,10 @@
 {
-  "name": "starterkit",
-  "version": "0.0.0",
+  "name": "web-design.io",
+  "version": "0.1.0",
   "authors": [
-    "Dominik Burgdörfer <db@domachine.de>"
+    "web-design.io"
   ],
-  "license": "MIT",
+  "license": "ISC",
   "private": true,
   "ignore": [
     "**/.*",

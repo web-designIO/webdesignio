@@ -11,10 +11,26 @@ The documentation resides under /docs.  Refer to them as a developer.
 ```
 #!shell
 
-git clone git@bitbucket.org:domachine/webdesignio.git
+git clone https://github.com/web-designIO/webdesignio.git
 ```
 
-2. Install all software needed.
+2. Add a file for secrets. Used secrets are:
+
+```
+# ./secrets
+
+COOKIE_SECRET=""
+AWS_ACCESS_KEY_ID=''
+AWS_SECRET_ACCESS_KEY=''
+AWS_S3_BUCKET=''
+AWS_S3_REGION=''
+MAILGUN_DOMAIN=''
+MAILGUN_API_KEY=''
+MAILCHIMP_API_KEY=''
+MAILCHIMP_LIST_ID=''
+```
+
+3. Install all software needed.
 
 ```
 #!shell
@@ -22,15 +38,15 @@ node.js, npm, docker, docker-compose
 
 ```
 
-3. Run dependency installation.
+4. Run dependency installation.
 
 ```
 #!shell
 
-npm install && bower install
+./scripts/setup && bower install
 ```
 
-4. Start the platform:
+5. Start the platform:
 
 ```
 #!shell
@@ -41,16 +57,14 @@ docker-compose up
 5. Using a browser, go to http://localhost:3000 and you'll see: web-design.io.
 
 
-
-
 # Install a website #
 
-....
-1. Git submodule init and git submodule update
+# Add a website #
+```
+#!shell
 
-# Create a new website #
-1. Create Bitbucket repository
-2. git submodule add $$$$:x-oauth-basic@bitbucket.org/webdesignio/website-NAME.git PATH
+git submodule add website-name.git websites/website-name
+```
 
 # Required parts for a website #
 
