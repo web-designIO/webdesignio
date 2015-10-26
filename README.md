@@ -26,7 +26,7 @@ The documentation resides under /docs.  Refer to them as a developer.
 
 3. Install dependencies.
 
-        node.js, npm, docker, docker-compose
+        node.js, npm, bower, docker, docker-compose
 
 4. Run dependency installation.
 
@@ -36,9 +36,22 @@ The documentation resides under /docs.  Refer to them as a developer.
 
         docker-compose up
 
-5. Using a browser, go to http://localhost:3000 and you'll see: web-design.io.
+6. Using a browser, go to http://localhost:3000 and you'll see: web-design.io.
 
+## Add fist user
 
+1. Open a connection to MongoDB:
+
+        localhost:27018
+
+2. Create a DB 'local'. Create a collection 'users'. Create document:
+
+        "email" : "some@email.com",
+        "isAdmin" : true
+        
+3. Using a browser, go to http://localhost:3000/register and use the same email.
+
+4. Go to http://localhost:3000/auth . Login.
 
 ## Install a website
 
