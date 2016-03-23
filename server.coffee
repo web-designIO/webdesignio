@@ -5,14 +5,14 @@ mongoose = require('mongoose')
 
 project = null
 mongooseUrl = process.env.MONGOHQ_URL
+mongooseUrl = process.env.MONGO_URI unless mongooseUrl?
 mongooseUrl = process.env.MONGOLAB_URI unless mongooseUrl?
 port = process.env.PORT or 3000
 
 unless mongooseUrl
 
-  # Construct connection url from docker environment variables.
-  mongooseUrl = """mongodb://#{process.env.MONGO_PORT_27017_TCP_ADDR}:\
-    #{process.env.MONGO_PORT_27017_TCP_PORT}/local"""
+  # Construct connection url for local environment.
+  mongooseUrl = 'mongodb://localhost/local'
 
 server = http
   .createServer (req, res) ->
