@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export NODE_PATH=.:websites
+
+# Set Environment Variables
+source secrets
+export WD_URL='http://localhost:3000'
+export WD_HOSTNAME='localhost'
+
+# Cleanup on exit
+trap 'kill $(jobs -p)' EXIT
+
+# Spin up development tools
+mongod --dbpath data &
+redis-server &
+node-dev server.coffee
