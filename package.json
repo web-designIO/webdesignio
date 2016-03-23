@@ -1,10 +1,10 @@
 {
   "name": "webdesignio",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Hosting platform for websites.",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_PATH=.:websites coffee server.coffee",
+    "start": "./scripts/start",
     "build": "NODE_ENV=production NODE_PATH=. make",
     "build-dev": "NODE_PATH=.:websites grunt build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -61,6 +61,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "less": "^2.4.0",
     "react": "^0.11.2",
+    "node-dev": "^3.0.0",
     "uglify-js": "^2.4.16"
   },
   "engines": {
