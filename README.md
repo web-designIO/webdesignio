@@ -2,6 +2,10 @@
 
 [ ![Codeship Status for  domachine/webdesignio](https://codeship.com/projects/b8e80bb0-98dd-0132-fd19-668aa6fdbfb3/status?branch=feature/s3-assets)](https://codeship.com/projects/63478)
 
+****
+We are currently working on the next version here: [webdesignio V2](https://github.com/webdesignio)
+****
+
 The documentation resides under /docs.  Refer to them as a developer.
 
 ## Getting Started
