@@ -18,27 +18,27 @@ The documentation resides under /docs.  Refer to them as a developer.
 
         # ./secrets
         
-        COOKIE_SECRET=""
-        AWS_ACCESS_KEY_ID=''
-        AWS_SECRET_ACCESS_KEY=''
-        AWS_S3_BUCKET=''
-        AWS_S3_REGION=''
-        MAILGUN_DOMAIN=''
-        MAILGUN_API_KEY=''
-        MAILCHIMP_API_KEY=''
-        MAILCHIMP_LIST_ID=''
+        export COOKIE_SECRET=""
+        export AWS_ACCESS_KEY_ID=""
+        export AWS_SECRET_ACCESS_KEY=""
+        export AWS_S3_BUCKET=""
+        export AWS_S3_REGION=""
+        export MAILGUN_DOMAIN=""
+        export MAILGUN_API_KEY=""
+        export MAILCHIMP_API_KEY=""
+        export MAILCHIMP_LIST_ID=""
 
 3. Install dependencies.
 
-        node.js, npm, bower, docker, docker-compose
+        node.js, npm, bower
 
 4. Run dependency installation.
 
-        ./scripts/setup && bower install
+        npm install && bower install
 
 5. Start the platform:
 
-        docker-compose up
+        npm start
 
 6. Using a browser, go to http://localhost:3000 and you'll see: web-design.io.
 
