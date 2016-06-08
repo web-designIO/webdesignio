@@ -30,7 +30,7 @@ The documentation resides under /docs.  Refer to them as a developer.
 
 3. Install dependencies.
 
-        node.js, npm, bower, mongod, redis-server
+        node, npm, bower, mongod, redis-server
 
 4. Run dependency installation.
 
