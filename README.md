@@ -30,7 +30,7 @@ The documentation resides under /docs.  Refer to them as a developer.
 
 3. Install dependencies.
 
-        node.js, npm, bower
+        node.js, npm, bower, mongod, redis-server
 
 4. Run dependency installation.
 
@@ -63,10 +63,15 @@ The documentation resides under /docs.  Refer to them as a developer.
 
         git submodule add website-name.git websites/website-name
 
+### Use the website
+
+1. Go to http://localhost:3000/admin/websites/new. Use
+
+        Website: website-name (the name of the submodule)
+        Domains: a free local domain e.g. sub1.localhost
+
+2. Save and visit the domain that you have just entered.
+
 ### Required parts for a website
 
 1. A website exports an express-app. So you can do everything you can do with express.
-
-2. require inlace
-
-3. Helper methods on the cms-module.
