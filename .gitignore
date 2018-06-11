@@ -28,6 +28,7 @@ node_modules
 
 # Dev
 .DS_Store
-data
+data/*
+!data/.gitkeep
 docker-compose.yml
 Dockerfile
