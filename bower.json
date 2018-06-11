@@ -23,7 +23,7 @@
     "typeahead.js": "~0.10.5",
     "jquery-ui": "~1.11.2",
     "octicons": "~2.1.2",
-    "OwlCarousel": "~1.3.2",
+    "OwlCarousel": "https://github.com/pA1nD/OwlCarousel.git",
     "numeral": "~1.5.3",
     "imagesloaded": "~3.1.8",
     "masonry": "~3.3.0",
